@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad · GastoForaneo</title>
+<title>Política de privacidad · Privacy policy · 隐私政策 · GastoForaneo</title>
 <style>
   :root { color-scheme: light dark; --fg:#15171c; --muted:#5b6270; --bg:#ffffff; --accent:#0b7a8a; }
   @media (prefers-color-scheme: dark) { :root { --fg:#eef0f4; --muted:#a3abb8; --bg:#101216; --accent:#5ec8d6; } }
@@ -14,35 +14,48 @@
   p, li { color: var(--fg); }
   .muted { color: var(--muted); font-size: .95rem; }
   a { color: var(--accent); }
+  nav.lang { display: flex; gap: 14px; margin: 0 0 1.4rem; font-size: .95rem; }
+  nav.lang a { text-decoration: none; padding: 2px 0; border-bottom: 2px solid transparent; }
+  nav.lang a:hover { border-bottom-color: var(--accent); }
+  section.lang { display: none; }
+  section.lang:target { display: block; }
+  body:not(:has(:target)) #es { display: block; }
 </style>
 </head>
 <body>
 <main>
+  <nav class="lang" aria-label="Idioma / Language / 语言">
+    <a href="#es">Español</a>
+    <a href="#en">English</a>
+    <a href="#zh">简体中文</a>
+  </nav>
+
+  <section class="lang" id="es" lang="es">
   <h1>Política de privacidad</h1>
-  <p class="muted">GastoForaneo para iPhone y para Android · Última actualización: 29 de octubre de 2026</p>
+  <p class="muted">GastoForaneo · Última actualización: 31 de octubre de 2026</p>
 
-  <p>GastoForaneo es una app para llevar el control de tus gastos y planear tu ahorro lejos de casa. Esta política explica, de forma sencilla, qué hace (y qué no hace) la app con tu información. Aplica por igual a la versión de iPhone y a la de Android.</p>
+  <p>GastoForaneo es una app para llevar el control de tus gastos y planear tu ahorro lejos de casa. Esta política explica, de forma sencilla, qué hace (y qué no hace) la app con tu información.</p>
 
-  <h2>Tus datos se quedan en tu teléfono</h2>
+  <h2>Tus datos se quedan en tu iPhone</h2>
   <p>Los gastos, límites, plan de ahorro, tarjetas, pagos fijos y ajustes que capturas se guardan únicamente en tu dispositivo. De cada tarjeta solo se guarda el nombre y los últimos 4 dígitos que tú decidas escribir (opcional): la app nunca pide ni guarda el número completo, el código de seguridad ni se conecta a tu banco. No hay cuentas de usuario, no existe un servidor propio de la app y no recopilamos, vendemos ni compartimos información personal. Tampoco usamos publicidad, analítica ni herramientas de rastreo.</p>
 
   <h2>Conexión a internet</h2>
   <p>Para obtener tipos de cambio, la app consulta servicios públicos de terceros (<a href="https://www.exchangerate-api.com">ExchangeRate-API</a> y <a href="https://frankfurter.dev">Frankfurter</a>, que usa datos de bancos centrales). Esas consultas contienen únicamente códigos de moneda (por ejemplo, KRW y MXN) y fechas; nunca tus montos, notas o categorías. Como ocurre en cualquier conexión a internet, esos servicios pueden ver la dirección IP desde la que se conecta tu dispositivo y se rigen por sus propias políticas de privacidad.</p>
 
   <h2>Notificaciones</h2>
-  <p>Los avisos de límites y de pagos (tarjetas y pagos fijos) se programan en tu dispositivo y no envían información fuera de él. La app funciona igual si no los permites. Puedes retirar tu permiso en cualquier momento desde la app o desde los ajustes de iOS o de Android.</p>
+  <p>Los avisos de límites y de pagos (tarjetas y pagos fijos) se programan en tu dispositivo y no envían información fuera de él. La app funciona igual si no los permites. Puedes retirar tu permiso en cualquier momento desde la app o desde los Ajustes de iOS.</p>
 
-  <h2>Resumen con IA del teléfono</h2>
-  <p>En los dispositivos compatibles, el botón de resumen con IA usa el modelo de lenguaje que el propio sistema incluye: Apple Intelligence en iPhone y Gemini Nano en Android. Se ejecuta por completo en tu teléfono: no usa internet para generar el texto, no tiene costo y no envía tus gastos a ningún servidor ni a terceros. Solo redacta, con tus cifras, qué categorías pesan más y cada cuánto gastas; la app descarta cualquier texto que dé consejos o incluya cifras que no sean tuyas. Es una descripción automática que puede contener errores y no es asesoría financiera.</p>
+  <h2>Resumen con IA del iPhone</h2>
+  <p>En los iPhone compatibles, el botón «Explicar con IA del iPhone» usa el modelo de lenguaje que Apple incluye en el dispositivo. Se ejecuta por completo en tu iPhone: no usa internet, no tiene costo y no envía tus gastos a ningún servidor ni a terceros. Solo redacta, con tus cifras, qué categorías pesan más y cada cuánto gastas; la app descarta cualquier texto que dé consejos o incluya cifras que no sean tuyas. Es una descripción automática que puede contener errores y no es asesoría financiera.</p>
 
   <h2>Compartir el resumen o tu copia de seguridad</h2>
-  <p>El PDF del resumen y la copia de seguridad se crean en tu dispositivo. Solo salen de la app cuando tú los compartes o los guardas y eliges el destino (por ejemplo, un asistente de inteligencia artificial, un correo, Archivos o Google Drive). En ese caso, tus datos pasan a ese servicio y quedan sujetos a su política de privacidad; la app nunca los envía por sí sola ni conserva copia.</p>
-
-  <h2>Copias automáticas del sistema</h2>
-  <p>Si tienes activada la copia de seguridad de tu teléfono (iCloud en iPhone o la copia de Google en Android), el sistema puede incluir los datos de la app en esa copia y restaurarlos cuando cambies de equipo. Esa copia la administran Apple o Google con tu cuenta; GastoForaneo no tiene acceso a ella. Puedes desactivarla en los ajustes del sistema.</p>
+  <p>El PDF del resumen y la copia de seguridad se crean en tu dispositivo. Solo salen de la app cuando tú los compartes y eliges el destino (por ejemplo, un asistente de inteligencia artificial, un correo o Archivos). En ese caso, tus datos pasan a ese servicio y quedan sujetos a su política de privacidad; la app nunca los envía por sí sola ni conserva copia.</p>
 
   <h2>Conservación y eliminación de tus datos</h2>
-  <p>Tus datos se conservan en tu dispositivo mientras tengas la app instalada. En Ajustes → Datos puedes borrar todos tus gastos, y al desinstalar la app se elimina toda su información. Como no tenemos copia de tus datos, no hay nada que solicitarnos borrar.</p>
+  <p>Tus datos se conservan en tu dispositivo mientras tengas la app instalada. Para protegerlos si el archivo se dañara, la app guarda en el propio dispositivo copias automáticas (hasta 7 diarias y 3 previas a reemplazar o borrar datos); nunca salen de tu iPhone. En <em>Ajustes → Datos</em> puedes borrar todos tus gastos y, en <em>Copias automáticas</em>, ver, recuperar o borrar esas copias. Al desinstalar la app se elimina toda su información. Como no tenemos copia de tus datos, no hay nada que solicitarnos borrar.</p>
+
+  <h2>Apoyo voluntario (propinas)</h2>
+  <p>La app es gratuita y puedes, si quieres, dejar una propina al desarrollador mediante una compra dentro de la app. Es totalmente opcional, no desbloquea funciones y la app funciona igual para todos. El pago lo procesa Apple con tu cuenta de Apple; GastoForaneo no recibe ni guarda tus datos de pago ni tu identidad.</p>
 
   <h2>No es un servicio financiero</h2>
   <p>GastoForaneo es una herramienta de registro y planeación personal. No es un banco, no maneja ni guarda tu dinero, no se conecta a tus cuentas y no ofrece asesoría financiera, legal ni fiscal. Los tipos de cambio son informativos y pueden diferir de los de tu banco.</p>
@@ -54,7 +67,96 @@
   <p>Si esta política cambia, publicaremos la versión actualizada en esta misma página con una nueva fecha.</p>
 
   <h2>Contacto</h2>
-  <p>Si tienes preguntas sobre esta política, escríbenos a <a href="mailto:gastoforaneo.soporte@gmail.com">gastoforaneo.soporte@gmail.com</a>.</p>
+  <p>Si tienes preguntas sobre esta política, escríbenos a <strong>gastoforaneo.soporte@gmail.com</strong>.</p>
+  </section>
+
+  <section class="lang" id="en" lang="en">
+  <h1>Privacy policy</h1>
+  <p class="muted">GastoForaneo · Last updated: October 31, 2026</p>
+
+  <p>GastoForaneo is an app for keeping track of your spending and planning your savings while living away from home. This policy explains, in simple terms, what the app does (and doesn't do) with your information.</p>
+
+  <h2>Your data stays on your iPhone</h2>
+  <p>The expenses, limits, savings plan, cards, recurring payments and settings you enter are stored only on your device. For each card, only the name and the last 4 digits you choose to type (optional) are stored: the app never asks for or stores the full number or the security code, and never connects to your bank. There are no user accounts, the app has no server of its own, and we don't collect, sell or share personal information. We also don't use advertising, analytics or tracking tools.</p>
+
+  <h2>Internet connection</h2>
+  <p>To get exchange rates, the app queries public third-party services (<a href="https://www.exchangerate-api.com">ExchangeRate-API</a> and <a href="https://frankfurter.dev">Frankfurter</a>, which uses central bank data). Those requests contain only currency codes (for example, KRW and MXN) and dates; never your amounts, notes or categories. As with any internet connection, those services can see the IP address your device connects from and are governed by their own privacy policies.</p>
+
+  <h2>Notifications</h2>
+  <p>Limit and payment alerts (cards and recurring payments) are scheduled on your device and send no information off it. The app works the same if you don't allow them. You can withdraw your permission at any time from the app or from iOS Settings.</p>
+
+  <h2>AI summary on iPhone</h2>
+  <p>On compatible iPhones, the “Explain with AI (on device)” button uses the language model Apple includes in the device. It runs entirely on your iPhone: it doesn't use the internet, has no cost and doesn't send your expenses to any server or third party. It only writes up, with your figures, which categories weigh the most and how often you spend; the app discards any text that gives advice or includes figures that aren't yours. It is an automatic description that may contain errors and is not financial advice.</p>
+
+  <h2>Sharing the summary or your backup</h2>
+  <p>The summary PDF and the backup are created on your device. They only leave the app when you share them and choose the destination (for example, an artificial intelligence assistant, an email or Files). In that case, your data goes to that service and is subject to its privacy policy; the app never sends them on its own or keeps a copy.</p>
+
+  <h2>Retention and deletion of your data</h2>
+  <p>Your data is kept on your device as long as the app is installed. To protect it in case the file gets damaged, the app stores automatic backups on the device itself (up to 7 daily and 3 before replacing or deleting data); they never leave your iPhone. In <em>Settings → Data</em> you can delete all your expenses and, in <em>Automatic backups</em>, view, restore or delete those backups. Uninstalling the app removes all of its information. Since we have no copy of your data, there is nothing to ask us to delete.</p>
+
+  <h2>Voluntary support (tips)</h2>
+  <p>The app is free and, if you want, you can leave the developer a tip through an in-app purchase. It is completely optional, unlocks no features and the app works the same for everyone. Apple processes the payment with your Apple account; GastoForaneo does not receive or store your payment details or your identity.</p>
+
+  <h2>Not a financial service</h2>
+  <p>GastoForaneo is a personal tracking and planning tool. It is not a bank, does not handle or hold your money, does not connect to your accounts and does not offer financial, legal or tax advice. Exchange rates are for information only and may differ from your bank's.</p>
+
+  <h2>Minors</h2>
+  <p>The app does not collect personal information from anyone, including minors.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we will publish the updated version on this same page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this policy, write to us at <strong>gastoforaneo.soporte@gmail.com</strong>.</p>
+  </section>
+
+  <section class="lang" id="zh" lang="zh-Hans">
+  <h1>隐私政策</h1>
+  <p class="muted">GastoForaneo · 最近更新：2026 年 10 月 31 日</p>
+
+  <p>GastoForaneo 是一款帮助你在远离家乡的地方记录支出、规划储蓄的 App。本政策用简明的语言说明 App 会（以及不会）如何处理你的信息。</p>
+
+  <h2>你的数据只保存在你的 iPhone 上</h2>
+  <p>你输入的支出、限额、储蓄计划、信用卡、固定付款和设置，仅保存在你的设备上。对于每张信用卡，只会保存名称以及你自愿输入的后 4 位数字（可选）：App 绝不会索取或保存完整卡号和安全码，也不会连接你的银行。没有用户账号，App 没有自己的服务器，我们不会收集、出售或分享个人信息。我们也不使用广告、数据分析或追踪工具。</p>
+
+  <h2>网络连接</h2>
+  <p>为获取汇率，App 会查询第三方公共服务（<a href="https://www.exchangerate-api.com">ExchangeRate-API</a> 和 <a href="https://frankfurter.dev">Frankfurter</a>，后者使用各国央行数据）。这些请求只包含货币代码（例如 KRW 和 MXN）和日期，绝不包含你的金额、备注或类别。与任何网络连接一样，这些服务可能会看到你的设备所用的 IP 地址，并受其各自隐私政策约束。</p>
+
+  <h2>通知</h2>
+  <p>限额和付款（信用卡与固定付款）提醒均在你的设备上本地安排，不会向外发送任何信息。即使你不允许通知，App 也能照常使用。你可以随时在 App 内或 iOS 设置中撤销授权。</p>
+
+  <h2>iPhone 上的 AI 摘要</h2>
+  <p>在兼容的 iPhone 上，“用 AI 解读（本地）”按钮使用 Apple 内置于设备的语言模型。它完全在你的 iPhone 上运行：不使用网络，没有费用，也不会把你的支出发送给任何服务器或第三方。它只会根据你的数据，描述哪些类别占比最大以及你多久消费一次；App 会丢弃任何包含建议或不属于你的数据的文字。这是自动生成的描述，可能有误，也不构成财务建议。</p>
+
+  <h2>分享摘要或备份</h2>
+  <p>摘要 PDF 和备份文件都在你的设备上生成。只有当你选择分享并指定去向时（例如 AI 助手、电子邮件或“文件”App），它们才会离开 App。此时你的数据会进入该服务，并受其隐私政策约束；App 绝不会自行发送，也不会保留副本。</p>
+
+  <h2>数据的保留与删除</h2>
+  <p>只要 App 仍安装在你的设备上，你的数据就会一直保留。为了在文件损坏时保护数据，App 会在设备本身保存自动备份（最多 7 份每日备份，以及 3 份替换或删除数据前的备份）；这些备份绝不会离开你的 iPhone。你可以在<em>“设置 → 数据”</em>中删除全部支出，并在<em>“自动备份”</em>中查看、恢复或删除这些备份。卸载 App 会清除其全部信息。由于我们没有你的数据副本，因此没有什么需要你请求我们删除的。</p>
+
+  <h2>自愿支持（打赏）</h2>
+  <p>App 免费，如果你愿意，可以通过 App 内购买向开发者打赏。这完全是自愿的，不会解锁任何功能，所有人使用的 App 都是一样的。付款由 Apple 通过你的 Apple 账户处理；GastoForaneo 不会收到或保存你的付款信息和身份信息。</p>
+
+  <h2>这不是金融服务</h2>
+  <p>GastoForaneo 是个人记账和规划工具。它不是银行，不经手也不保管你的资金，不连接你的账户，也不提供财务、法律或税务建议。汇率仅供参考，可能与你的银行汇率不同。</p>
+
+  <h2>未成年人</h2>
+  <p>本 App 不会收集任何人的个人信息，包括未成年人。</p>
+
+  <h2>本政策的变更</h2>
+  <p>如果本政策发生变更，我们会在本页面发布更新后的版本，并标注新的日期。</p>
+
+  <h2>联系方式</h2>
+  <p>如对本政策有任何疑问，请发送邮件至 <strong>gastoforaneo.soporte@gmail.com</strong>。</p>
+  </section>
 </main>
+<script>
+  // Sin enlace a un idioma concreto, muestra el del navegador (inglés o chino); si no, español.
+  if (!location.hash) {
+    var l = (navigator.language || '').toLowerCase();
+    if (l.indexOf('zh') === 0) location.replace('#zh');
+    else if (l.indexOf('en') === 0) location.replace('#en');
+  }
+</script>
 </body>
 </html>
